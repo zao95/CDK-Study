@@ -1,0 +1,34 @@
+{
+    "name": "cdk-study",
+    "version": "0.1.0",
+    "bin": {
+        "cdk-study": "bin/cdk-study.js"
+    },
+    "scripts": {
+        "synth": "cdk synth --profile educate",
+        "bootstrap": "cdk bootstrap --profile educate",
+        "deploy": "cdk deploy --profile educate",
+        "destroy": "cdk destroy --profile educate",
+        "build": "tsc",
+        "watch": "tsc -w",
+        "test": "jest",
+        "cdk": "cdk"
+    },
+    "devDependencies": {
+        "@aws-cdk/assert": "1.90.1",
+        "@aws-cdk/aws-apigateway": "^1.90.1",
+        "@aws-cdk/aws-lambda": "^1.90.1",
+        "@aws-cdk/aws-s3": "^1.90.1",
+        "@types/jest": "^26.0.10",
+        "@types/node": "10.17.27",
+        "aws-cdk": "1.90.1",
+        "jest": "^26.4.2",
+        "ts-jest": "^26.2.0",
+        "ts-node": "^9.0.0",
+        "typescript": "~3.9.7"
+    },
+    "dependencies": {
+        "@aws-cdk/core": "1.90.1",
+        "source-map-support": "^0.5.16"
+    }
+}
